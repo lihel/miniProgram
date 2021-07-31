@@ -1,5 +1,5 @@
 <template>
-    <!-- 全局组件text -->
+	<!-- 全局组件text -->
 	<view>
 		{{headText}}
 	</view>
@@ -7,15 +7,15 @@
 
 <script>
 	export default {
-		name:"pageHead",
+		name: "pageHead",
 		data() {
 			return {
-				headText:'headText'
+				headText: 'headText'
 			};
 		},
 		created() {
 			uni.setNavigationBarTitle({
-			    title: '新的标题'
+				title: '新的标题'
 			});
 		}
 	}
