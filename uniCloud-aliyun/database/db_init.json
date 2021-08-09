@@ -1,0 +1,44 @@
+{
+	"user-info": {
+		"data": [{
+				"_id": {
+					"$oid": "6110efdc6311030001f23917"
+				},
+				"name": "李四",
+				"is_announcer": false
+			},
+			{
+				"_id": {
+					"$oid": "6110efd331de900001554136"
+				},
+				"name": "zhangsan",
+				"is_announcer": true
+			}
+		],
+		"schema": {
+			"bsonType": "object",
+			"required": [],
+			"permission": {
+				"read": false,
+				"create": false,
+				"update": false,
+				"delete": false
+			},
+			"properties": {
+				"_id": {
+					"description": "ID，系统自动生成"
+				},
+				"name": {
+					"title": "name",
+					"bsonType": "string",
+					"trim": "both",
+					"minlength": 4
+				},
+				"is_announcer": {
+					"title": "isannouncer",
+					"bsonType": "boolean"
+				}
+			}
+		}
+	}
+}
